@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/DarkGray">
+
+
+    <TextView
+        android:id="@+id/title_desafio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_eu"
+        android:text="Desafio do Botão"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button_eu"
+        android:shadowColor="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/button_vou"
+        android:backgroundTint="@color/DarkMagenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_eu" />
+
+
+    <Button
+        android:id="@+id/button_virar"
+        android:backgroundTint="@color/DarkOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vou" />
+
+    <Button
+        android:id="@+id/button_dev"
+        android:backgroundTint="@color/ForestGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_virar" />
+
+    <TextView
+        android:id="@+id/text_eu"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_vou"
+        app:layout_constraintTop_toBottomOf="@+id/button_dev"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/text_vou"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/text_eu"
+        app:layout_constraintTop_toBottomOf="@+id/button_dev"
+        app:layout_constraintEnd_toStartOf="@+id/text_virar"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/text_virar"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/text_vou"
+        app:layout_constraintTop_toBottomOf="@+id/button_dev"
+        app:layout_constraintEnd_toStartOf="@+id/text_dev"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/text_dev"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/text_virar"
+        app:layout_constraintTop_toBottomOf="@+id/button_dev"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
